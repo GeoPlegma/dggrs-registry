@@ -1,0 +1,140 @@
+@prefix : <http://www.semanticweb.org/dggrs/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix geosrs: <https://w3id.org/geosrs> .
+@base <http://www.semanticweb.org/dggrs/> .
+
+<http://www.semanticweb.org/dggrs> rdf:type owl:Ontology ;
+        rdfs:label "Discrete Global Grid Reference Systems ontology"@en ;
+        rdfs:comment """A means to express and record Discrete Global Grid 
+                        Reference Systems on the web. This ontology depends on 
+                        the CRS ontology in development at the OGC."""@en ;
+        rdf:seeAlso geosrs: ;
+        dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+        dcterms:rights "This ontology is distributed under Attribution-NonCommercial-NoDerivs 4.0 International License"@en ;
+        dcterms:creator 
+            [ rdfs:seeAlso <http://orcid.org/0000-0002-5851-2071> ;
+              foaf:name "Luís Moreira de Sousa" ] .
+
+#################################################################
+#    Classes
+#################################################################
+
+:DGGRS rdf:type owl:Class ; 
+       rdfs:subClassOf geosrs:SpatialReferenceSystem ;
+       rdfs:label "Discrete Global Grid Reference System (DGGRS)"@en ;
+       rdfs:comment """A Spatial Reference System composed of a Discrete Global 
+                       Grid System and a zone (cell) indexing mechanism allowing 
+                       for discrete but precise location on the surface of the 
+                       Earth."""@en .
+
+:Polyhedron rdf:type owl:Class ; 
+       rdfs:label "Polyhedron"@en ;
+       rdfs:comment """A multi-faceted solid providing a geometric structure to 
+                       divide a sphere or ellipsoid. The platonic solids are 
+                       the most commonly used, although alternatives may also 
+                       be used, such as the truncated icosahedron."""@en .
+
+:Index rdf:type owl:Class ; 
+       rdfs:label "DGGRS indexing mechanism"@en ;
+       rdfs:comment """A mathematical function, ordering mechanism, or any other 
+                       method providing a unique identifier to each zone (cell) 
+                       of a DGGRS, at any refinement level (resolution)."""@en .
+
+:ImplDGGRS rdf:type owl:Class ; 
+       rdfs:label "DGGRS implementation"@en ;
+       rdfs:comment """A software system implementing a DGGRS. It should at a minimum provide an API to transform a geographic location into a zone (cell) identifier at a given refinement level (resolution), plus its inverse. """@en .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+:basePolyhedron rdf:type owl:ObjectProperty ;
+              rdfs:label "Base polyhedron of a DGGRS"@en ;
+              rdfs:comment """Usually a polyhedron on which faces the datum 
+                            surface is projected for further sub-division."""@en ; 
+              rdfs:domain :DGGRS ;
+              rdfs:range :Polyhedron .
+
+:usesIndex rdf:type owl:ObjectProperty ;
+        rdf:label "Indexing mechanism used in a DGGRS"@en ;
+        rdf:comment """Indicates that a particular software software system 
+                       implements a known DGGRS"""@en ;
+        rdfs:domain :DGGRS ;
+        rdfs:range :Index .  
+
+:implements rdf:type owl:ObjectProperty ;
+        rdf:label "Implementation of a DGGRS"@en ;
+        rdf:comment """Indicates that a particular software software system 
+                       implements a known DGGRS"""@en ;
+        rdfs:domain :ImplDGGRS ;
+        rdfs:range :DGGRS .  
+
+#################################################################
+#    DataType Properties
+#################################################################
+
+
+:zoneShape rdf:type owl:DatatypeProperty ;
+         rdfs:label "Shape of zones (cells) in a DGGRS"@en ;
+         rdfs:comment """Usually a regular shape like the hexagon or triangle. 
+                         May also be a rhombic shape such as the parellelogram."""@en ; 
+         rdfs:domain :DGGRS ;
+        rdfs:range xsd:string .
+
+:aperture rdf:type owl:DatatypeProperty ;
+    rdfs:label "DGGRS zone sub-division aperture"@en ;
+    rdfs:comment """The number of zones in the subsequent DGGRS refinement 
+                    level corresponding to a zone on the current level. Rate 
+                    of zone sub-division. The higher the number, the ´faster' 
+                    a DGGRS refines to small zones."""@en ;
+    rdfs:domain : DGGRS ;
+    rdfs:range [
+        rdf:type rdfs:Datatype;
+        owl:onDatatype  xsd:integer;
+        owl:withRestrictions ( [xsd:minInclusive 2] )
+    ] .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+:tetrahedron rdf:type :Polyhedron ;
+           rdfs:label "Tetrahedron"@en ;
+           rdfs:comment """A solid with four equal faces which are equilateral 
+                           triangles."""@en .
+
+:hexahedron rdf:type :Polyhedron ;
+           rdfs:label "Hexahedron"@en ;
+           rdfs:comment """A solid with six equal faces which are squares"""@en . 
+
+:dodecahedron rdf:type :Polyhedron ;
+           rdfs:label "Dodecahedron"@en ;
+           rdfs:comment """A solid with twelve equal faces which are pentagons."""@en .
+
+:icosahedron rdf:type :Polyhedron ;
+           rdfs:label "Icosahedron"@en ;
+           rdfs:comment """A solid with twenty equal faces which are equilateral 
+                           triangles."""@en .
+
+:gbt rdf:type :Index ;
+           rdfs:label "Generalised Balanced Trenary"@en ;
+           rdfs:comment """Indexes grid systems of hexagons with aperture 7. At 
+                           each refinement level cells rotate circa 20º so that 
+                           vertices of a cell septet concide with the six 
+                           vertices of a cell in the previous refinement level."""@en .
+
+igeo7 rdf:type :Index ;
+        rdfs:label "IGEO7"@en ;
+        rdfs:comment """An index for hexagonal grid systems of aperture 7."""@en .
+
+dggal-hex rdf:type :Index ;
+        rdfs:label "IGEO7"@en ;
+        rdfs:comment """A highly compact index for hexagonal grid systems 
+                        first implemented by DGGAL."""@en .
+
+
