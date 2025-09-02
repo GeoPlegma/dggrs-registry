@@ -59,6 +59,16 @@
               rdfs:domain :DGGRS ;
               rdfs:range :Polyhedron .
 
+:mapProjection rdf:type owl:ObjectProperty ;
+        rdfs:label "Assigns a map projection to a DGGRS"@en ;
+        rdfs:comment """Most DGGRS individuals use a map projection to 
+                        transform coordinates in surface of the sphere or 
+                        ellipsoid to the faces of a polyhedron. Equal-area 
+                        projections are more common, but other such as the 
+                        Gnomonic have found their use."""@en ; 
+        rdfs:domain :DGGRS ;
+        rdfs:range geosrs:Projection .
+
 :usesIndex rdf:type owl:ObjectProperty ;
         rdf:label "Indexing mechanism used in a DGGRS"@en ;
         rdf:comment """Indicates that a particular software software system 
@@ -91,7 +101,7 @@
                     level corresponding to a zone on the current level. Rate 
                     of zone sub-division. The higher the number, the ´faster' 
                     a DGGRS refines to small zones."""@en ;
-    rdfs:domain : DGGRS ;
+    rdfs:domain :DGGRS ;
     rdfs:range [
         rdf:type rdfs:Datatype;
         owl:onDatatype  xsd:integer;
@@ -123,17 +133,17 @@
 
 :gbt rdf:type :Index ;
            rdfs:label "Generalised Balanced Trenary"@en ;
-           rdfs:comment """Indexes grid systems of hexagons with aperture 7. At 
+           rdfs:comment """Indexes hexagonal grid systems of aperture 7. At 
                            each refinement level cells rotate circa 20º so that 
                            vertices of a cell septet concide with the six 
                            vertices of a cell in the previous refinement level."""@en .
 
-igeo7 rdf:type :Index ;
+:igeo7 rdf:type :Index ;
         rdfs:label "IGEO7"@en ;
         rdfs:comment """An index for hexagonal grid systems of aperture 7."""@en .
 
-dggal-hex rdf:type :Index ;
-        rdfs:label "IGEO7"@en ;
+:dggal-hex rdf:type :Index ;
+        rdfs:label "DGGAL hexagonal index"@en ;
         rdfs:comment """A highly compact index for hexagonal grid systems 
                         first implemented by DGGAL."""@en .
 
