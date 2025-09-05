@@ -138,12 +138,13 @@
                            vertices of a cell septet concide with the six 
                            vertices of a cell in the previous refinement level."""@en .
 
-:igeo7 rdf:type :Index ;
-        rdfs:label "IGEO7"@en ;
-        rdfs:comment """An index for hexagonal grid systems of aperture 7."""@en .
+:z7 rdf:type :Index ;
+        rdfs:label "Z7"@en ;
+        rdfs:comment """An index for hexagonal grid systems of aperture 7."""@en ; 
+        rdfs:seeAlso <http://dx.doi.org/10.5194/agile-giss-6-32-2025>.
 
-:dggal-hex rdf:type :Index ;
-        rdfs:label "DGGAL hexagonal index"@en ;
+:ecere rdf:type :Index ;
+        rdfs:label "Hexagonal index developed by Ecere."@en ;
         rdfs:comment """A highly compact index for hexagonal grid systems 
                         first implemented by DGGAL."""@en .
 

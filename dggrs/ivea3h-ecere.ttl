@@ -1,0 +1,17 @@
+@prefix : <http://www.semanticweb.org/dggrs/ivea7h-z7> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix geosrs: <https://w3id.org/geosrs> .
+@prefix dggrs: <http://www.semanticweb.org/dggrs/> .
+
+:ivea3h-ecere a dggrs:DGGRS ;
+    rdfs:label """IVEA3H-Ecere"""@en ;
+    rdfs:comment """Icosahedral equal-area slice & dice projection with great 
+                    circle method. Hexagonal zone shape with reminiscent 
+                    pentagons, refined with perture 3. Applies the Ecere 
+                    indexing mechanism."""@en ;
+    dggrs:basePolyhedron dggrs:icosahedron ;
+    dggrs:mapProjection geosrs:SliceAndDiceGreatCircle ;
+    dggrs:zoneShape "hexagonal with 12 pentagons"@en ;
+    dggrs:aperture "3"^^xsd:integer ;
+    dggrs:usesIndex dggrs:ecere .
+
