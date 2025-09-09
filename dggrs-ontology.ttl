@@ -59,16 +59,6 @@
               rdfs:domain :DGGRS ;
               rdfs:range :Polyhedron .
 
-:mapProjection rdf:type owl:ObjectProperty ;
-        rdfs:label "Assigns a map projection to a DGGRS"@en ;
-        rdfs:comment """Most DGGRS individuals use a map projection to 
-                        transform coordinates in surface of the sphere or 
-                        ellipsoid to the faces of a polyhedron. Equal-area 
-                        projections are more common, but other such as the 
-                        Gnomonic have found their use."""@en ; 
-        rdfs:domain :DGGRS ;
-        rdfs:range geosrs:Projection .
-
 :usesIndex rdf:type owl:ObjectProperty ;
         rdf:label "Indexing mechanism used in a DGGRS"@en ;
         rdf:comment """Indicates that a particular software software system 

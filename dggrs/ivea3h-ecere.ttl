@@ -10,7 +10,7 @@
                     pentagons, refined with perture 3. Applies the Ecere 
                     indexing mechanism."""@en ;
     dggrs:basePolyhedron dggrs:icosahedron ;
-    dggrs:mapProjection geosrs:SliceAndDiceGreatCircle ;
+    geosrs:conversion geosrs:SliceAndDiceGreatCircle ;
     dggrs:zoneShape "hexagonal with 12 pentagons"@en ;
     dggrs:aperture "3"^^xsd:integer ;
     dggrs:usesIndex dggrs:ecere .

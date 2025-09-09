@@ -9,7 +9,7 @@
                     shape with reminiscent pentagons, refined with perture 7. 
                     Uses Z7 indexing mechanism."""@en ;
     dggrs:basePolyhedron dggrs:icosahedron ;
-    dggrs:mapProjection geosrs:SnyderEqualArea ;
+    geosrs:conversion geosrs:SnyderEqualArea ;
     dggrs:zoneShape "hexagonal with 12 pentagons"@en ;
     dggrs:aperture "7"^^xsd:integer ;
     dggrs:usesIndex dggrs:Z7 ;
