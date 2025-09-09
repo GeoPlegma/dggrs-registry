@@ -10,7 +10,7 @@
                     pentagons, refined with perture 7. Plus Z7 indexing 
                     mechanism."""@en ;
     dggrs:basePolyhedron dggrs:icosahedron ;
-    geosrs:conversion geosrs:SliceAndDiceGreatCircle ;
+    geosrs:conversion geosrs:SliceAndDiceVertexGreatCircle ;
     dggrs:zoneShape "hexagonal with 12 pentagons"@en ;
     dggrs:aperture "7"^^xsd:integer ;
     dggrs:usesIndex dggrs:Z7 .
