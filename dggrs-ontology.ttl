@@ -4,6 +4,9 @@
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix schema: <http://schema.org/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 @prefix geosrs: <https://w3id.org/geosrs> .
 @base <http://www.semanticweb.org/dggrs/> .
 
@@ -17,6 +20,7 @@
         dcterms:rights "This ontology is distributed under Attribution-NonCommercial-NoDerivs 4.0 International License"@en ;
         dcterms:creator 
             [ rdfs:seeAlso <http://orcid.org/0000-0002-5851-2071> ;
+              schema:affiliation [ foaf:name "Instituto Superior Técnico, University of Lisbon" ] ;
               foaf:name "Luís Moreira de Sousa" ] .
 
 #################################################################
