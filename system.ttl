@@ -1,0 +1,44 @@
+@prefix : <http://www.semanticweb.org/dggrs/system/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix geosrs: <https://w3id.org/geosrs/> .
+@prefix dggrs: <http://www.semanticweb.org/dggrs/> .
+
+:igeo7-z7 a dggrs:DGGRS ;
+    rdfs:label """Igeo7-Z7"""@en ;
+    rdfs:comment """Icosahedral Snyder equal-area projection. Hexagonal zone 
+                    shape with reminiscent pentagons, refined with aperture 7. 
+                    Uses Z7 indexing mechanism."""@en ;
+    dggrs:basePolyhedron dggrs:icosahedron ;
+    geosrs:conversion geosrs:SnyderEqualArea ;
+    dggrs:zoneShape "hexagonal with 12 pentagons"@en ;
+    dggrs:aperture "7"^^xsd:integer ;
+    dggrs:usesIndex dggrs:Z7 ;
+    rdfs:seeAlso <http://dx.doi.org/10.5194/agile-giss-6-32-2025> .
+
+
+:ivea3h-9r a dggrs:DGGRS ;
+    rdfs:label """IVEA3H-9R"""@en ;
+    rdfs:comment """Icosahedral equal-area slice & dice projection with great 
+                    circle method. Hexagonal zone shape with reminiscent 
+                    pentagons, refined with perture 3. Applies the 9R 
+                    indexing mechanism divised by Ecere."""@en ;
+    dggrs:basePolyhedron dggrs:icosahedron ;
+    geosrs:conversion geosrs:SliceAndDiceVertexGreatCircle ;
+    dggrs:zoneShape "hexagonal with 12 pentagons"@en ;
+    dggrs:aperture "3"^^xsd:integer ;
+    dggrs:usesIndex dggrs:9r .
+
+
+:ivea7h-z7 a dggrs:DGGRS ;
+    rdfs:label """IVEA7H-Z7"""@en ;
+    rdfs:comment """Icosahedral equal-area slice & dice projection with great 
+                    circle method. Hexagonal zone shape with reminiscent 
+                    pentagons, refined with aperture 7. Plus Z7 indexing 
+                    mechanism."""@en ;
+    dggrs:basePolyhedron dggrs:icosahedron ;
+    geosrs:conversion geosrs:SliceAndDiceVertexGreatCircle ;
+    dggrs:zoneShape "hexagonal with 12 pentagons"@en ;
+    dggrs:aperture "7"^^xsd:integer ;
+    dggrs:usesIndex dggrs:Z7 .
+
+
