@@ -1,7 +1,7 @@
 @prefix : <http://www.semanticweb.org/dggrs/implement> .
-@prefix dggrs: <http://www.semanticweb.org/dggrs/> .
+@prefix dggrs: <http://w3id.org/dggrs/> .
+@prefix system: <http://w3id.org/dggrs/system/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-
 
 :igeo7-z7-dggrid a dggrs:ImplDGGRS ;
     rdfs:label "Igeo7-Z7-DGGRID"@en ;
@@ -17,7 +17,7 @@
     :implements system:ivea7h-ecere ;
     rdfs:seeAlso <https://dggal.org/> .
 
-:ivea7h-z7-dggal a dggrs:ImplDGGRS ;
+:ivea7h-z7-gp a dggrs:ImplDGGRS ;
     rdfs:label "IVEA7H-Z7-GP"@en ;
     rdfs:comment """Modern icosahedral grid with aperture 7 hexagons and the 
                     Ecere indexing scheme. As implemented by GeoPlegma."""@en ;
