@@ -1,0 +1,81 @@
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/dggrs/aperture
+<http://www.semanticweb.org/dggrs/aperture> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.semanticweb.org/dggrs/basePolyhedron
+<http://www.semanticweb.org/dggrs/basePolyhedron> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.semanticweb.org/dggrs/usesIndex
+<http://www.semanticweb.org/dggrs/usesIndex> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.semanticweb.org/dggrs/zoneShape
+<http://www.semanticweb.org/dggrs/zoneShape> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://w3id.org/geosrs/conversion
+<https://w3id.org/geosrs/conversion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/dggrs/DGGRS
+<http://www.semanticweb.org/dggrs/DGGRS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/dggrs/system/igeo7-z7
+<http://www.semanticweb.org/dggrs/system/igeo7-z7> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/dggrs/system/igeo7-z7> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/dggrs/DGGRS> .
+<http://www.semanticweb.org/dggrs/system/igeo7-z7> <http://www.semanticweb.org/dggrs/aperture> "7"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.semanticweb.org/dggrs/system/igeo7-z7> <http://www.semanticweb.org/dggrs/basePolyhedron> <http://www.semanticweb.org/dggrs/icosahedron> .
+<http://www.semanticweb.org/dggrs/system/igeo7-z7> <http://www.semanticweb.org/dggrs/usesIndex> <http://www.semanticweb.org/dggrs/Z7> .
+<http://www.semanticweb.org/dggrs/system/igeo7-z7> <http://www.semanticweb.org/dggrs/zoneShape> "hexagonal with 12 pentagons"@en .
+<http://www.semanticweb.org/dggrs/system/igeo7-z7> <http://www.w3.org/2000/01/rdf-schema#comment> "Icosahedral Snyder equal-area projection. Hexagonal zone \n                    shape with reminiscent pentagons, refined with aperture 7. \n                    Uses Z7 indexing mechanism."@en .
+<http://www.semanticweb.org/dggrs/system/igeo7-z7> <http://www.w3.org/2000/01/rdf-schema#label> "Igeo7-Z7"@en .
+<http://www.semanticweb.org/dggrs/system/igeo7-z7> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://dx.doi.org/10.5194/agile-giss-6-32-2025> .
+<http://www.semanticweb.org/dggrs/system/igeo7-z7> <https://w3id.org/geosrs/conversion> <https://w3id.org/geosrs/SnyderEqualArea> .
+# 
+# http://www.semanticweb.org/dggrs/system/ivea3h-9r
+<http://www.semanticweb.org/dggrs/system/ivea3h-9r> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/dggrs/system/ivea3h-9r> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/dggrs/DGGRS> .
+<http://www.semanticweb.org/dggrs/system/ivea3h-9r> <http://www.semanticweb.org/dggrs/aperture> "3"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.semanticweb.org/dggrs/system/ivea3h-9r> <http://www.semanticweb.org/dggrs/basePolyhedron> <http://www.semanticweb.org/dggrs/icosahedron> .
+<http://www.semanticweb.org/dggrs/system/ivea3h-9r> <http://www.semanticweb.org/dggrs/usesIndex> <http://www.semanticweb.org/dggrs/9r> .
+<http://www.semanticweb.org/dggrs/system/ivea3h-9r> <http://www.semanticweb.org/dggrs/zoneShape> "hexagonal with 12 pentagons"@en .
+<http://www.semanticweb.org/dggrs/system/ivea3h-9r> <http://www.w3.org/2000/01/rdf-schema#comment> "Icosahedral equal-area slice & dice projection with great \n                    circle method. Hexagonal zone shape with reminiscent \n                    pentagons, refined with perture 3. Applies the 9R \n                    indexing mechanism divised by Ecere."@en .
+<http://www.semanticweb.org/dggrs/system/ivea3h-9r> <http://www.w3.org/2000/01/rdf-schema#label> "IVEA3H-9R"@en .
+<http://www.semanticweb.org/dggrs/system/ivea3h-9r> <https://w3id.org/geosrs/conversion> <https://w3id.org/geosrs/SliceAndDiceVertexGreatCircle> .
+# 
+# http://www.semanticweb.org/dggrs/system/ivea7h-z7
+<http://www.semanticweb.org/dggrs/system/ivea7h-z7> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/dggrs/system/ivea7h-z7> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/dggrs/DGGRS> .
+<http://www.semanticweb.org/dggrs/system/ivea7h-z7> <http://www.semanticweb.org/dggrs/aperture> "7"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.semanticweb.org/dggrs/system/ivea7h-z7> <http://www.semanticweb.org/dggrs/basePolyhedron> <http://www.semanticweb.org/dggrs/icosahedron> .
+<http://www.semanticweb.org/dggrs/system/ivea7h-z7> <http://www.semanticweb.org/dggrs/usesIndex> <http://www.semanticweb.org/dggrs/Z7> .
+<http://www.semanticweb.org/dggrs/system/ivea7h-z7> <http://www.semanticweb.org/dggrs/zoneShape> "hexagonal with 12 pentagons"@en .
+<http://www.semanticweb.org/dggrs/system/ivea7h-z7> <http://www.w3.org/2000/01/rdf-schema#comment> "Icosahedral equal-area slice & dice projection with great \n                    circle method. Hexagonal zone shape with reminiscent \n                    pentagons, refined with aperture 7. Plus Z7 indexing \n                    mechanism."@en .
+<http://www.semanticweb.org/dggrs/system/ivea7h-z7> <http://www.w3.org/2000/01/rdf-schema#label> "IVEA7H-Z7"@en .
+<http://www.semanticweb.org/dggrs/system/ivea7h-z7> <https://w3id.org/geosrs/conversion> <https://w3id.org/geosrs/SliceAndDiceVertexGreatCircle> .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

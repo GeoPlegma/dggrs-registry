@@ -1,0 +1,362 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/dggrs#"
+     xml:base="http://www.semanticweb.org/dggrs"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:schema="http://schema.org/">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/dggrs">
+        <terms:creator rdf:nodeID="genid1"/>
+        <terms:license rdf:resource="https://creativecommons.org/licenses/by-nc-nd/4.0/"/>
+        <terms:rights xml:lang="en">This ontology is distributed under Attribution-NonCommercial-NoDerivs 4.0 International License</terms:rights>
+        <rdfs:comment xml:lang="en">A means to express and record Discrete Global Grid 
+                        Reference Systems on the web. This ontology depends on 
+                        the CRS ontology in development at the OGC.</rdfs:comment>
+        <rdfs:label xml:lang="en">Discrete Global Grid Reference Systems ontology</rdfs:label>
+    </owl:Ontology>
+    <rdf:Description rdf:nodeID="genid1">
+        <schema:affiliation>
+            <rdf:Description>
+                <foaf:name>Instituto Superior Técnico, University of Lisbon</foaf:name>
+            </rdf:Description>
+        </schema:affiliation>
+        <rdfs:seeAlso rdf:resource="http://orcid.org/0000-0002-5851-2071"/>
+        <foaf:name>Luís Moreira de Sousa</foaf:name>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/rights -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/rights"/>
+    
+
+
+    <!-- http://schema.org/affiliation -->
+
+
+    <owl:AnnotationProperty rdf:about="http://schema.org/affiliation"/>
+    
+
+
+    <!-- http://www.w3.org/1999/02/22-rdf-syntax-ns#comment -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#comment"/>
+    
+
+
+    <!-- http://www.w3.org/1999/02/22-rdf-syntax-ns#label -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#label"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/name -->
+
+
+    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/name"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.semanticweb.org/dggrs/basePolyhedron -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dggrs/basePolyhedron">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dggrs/DGGRS"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/dggrs/Polyhedron"/>
+        <rdfs:comment xml:lang="en">Usually a polyhedron on which faces the datum 
+                      surface is projected for further sub-division.</rdfs:comment>
+        <rdfs:label xml:lang="en">Base polyhedron of a DGGRS</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dggrs/implements -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dggrs/implements">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dggrs/ImplDGGRS"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/dggrs/DGGRS"/>
+        <rdf:comment xml:lang="en">Indicates that a particular software software system 
+                       implements a known DGGRS</rdf:comment>
+        <rdf:label xml:lang="en">Implementation of a DGGRS</rdf:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dggrs/usesIndex -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dggrs/usesIndex">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dggrs/DGGRS"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/dggrs/Index"/>
+        <rdf:comment xml:lang="en">Indicates that a particular software software system 
+                       implements a known DGGRS</rdf:comment>
+        <rdf:label xml:lang="en">Indexing mechanism used in a DGGRS</rdf:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.semanticweb.org/dggrs/aperture -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dggrs/aperture">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dggrs/DGGRS"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                <owl:withRestrictions rdf:parseType="Collection">
+                    <rdf:Description>
+                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</xsd:minInclusive>
+                    </rdf:Description>
+                </owl:withRestrictions>
+            </rdfs:Datatype>
+        </rdfs:range>
+        <rdfs:comment xml:lang="en">The number of zones in the subsequent DGGRS refinement 
+                    level corresponding to a zone on the current level. Rate 
+                    of zone sub-division. The higher the number, the ´faster&apos; 
+                    a DGGRS refines to small zones.</rdfs:comment>
+        <rdfs:label xml:lang="en">DGGRS zone sub-division aperture</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dggrs/zoneShape -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dggrs/zoneShape">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dggrs/DGGRS"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Usually a regular shape like the hexagon or triangle. 
+                         May also be a rhombic shape such as the parellelogram.</rdfs:comment>
+        <rdfs:label xml:lang="en">Shape of zones (cells) in a DGGRS</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.semanticweb.org/dggrs/DGGRS -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dggrs/DGGRS">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/geosrsSpatialReferenceSystem"/>
+        <rdfs:comment xml:lang="en">A Spatial Reference System composed of a Discrete Global 
+                       Grid System and a zone (cell) indexing mechanism allowing 
+                       for discrete but precise location on the surface of the 
+                       Earth.</rdfs:comment>
+        <rdfs:label xml:lang="en">Discrete Global Grid Reference System (DGGRS)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dggrs/ImplDGGRS -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dggrs/ImplDGGRS">
+        <rdfs:comment xml:lang="en">A software system implementing a DGGRS. It should at a minimum provide an API to transform a geographic location into a zone (cell) identifier at a given refinement level (resolution), plus its inverse. </rdfs:comment>
+        <rdfs:label xml:lang="en">DGGRS implementation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dggrs/Index -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dggrs/Index">
+        <rdfs:comment xml:lang="en">A mathematical function, ordering mechanism, or any other 
+                       method providing a unique identifier to each zone (cell) 
+                       of a DGGRS, at any refinement level (resolution).</rdfs:comment>
+        <rdfs:label xml:lang="en">DGGRS indexing mechanism</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dggrs/Polyhedron -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dggrs/Polyhedron">
+        <rdfs:comment xml:lang="en">A multi-faceted solid providing a geometric structure to 
+                       divide a sphere or ellipsoid. The platonic solids are 
+                       the most commonly used, although alternatives may also 
+                       be used, such as the truncated icosahedron.</rdfs:comment>
+        <rdfs:label xml:lang="en">Polyhedron</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/geosrsSpatialReferenceSystem -->
+
+
+    <owl:Class rdf:about="https://w3id.org/geosrsSpatialReferenceSystem"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.semanticweb.org/dggrs/dodecahedron -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dggrs/dodecahedron">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dggrs/Polyhedron"/>
+        <rdfs:comment xml:lang="en">A solid with twelve equal faces which are pentagons.</rdfs:comment>
+        <rdfs:label xml:lang="en">Dodecahedron</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dggrs/gbt -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dggrs/gbt">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dggrs/Index"/>
+        <rdfs:comment xml:lang="en">Indexes hexagonal grid systems of aperture 7. At 
+                           each refinement level cells rotate circa 20º so that 
+                           vertices of a cell septet concide with the six 
+                           vertices of a cell in the previous refinement level.</rdfs:comment>
+        <rdfs:label xml:lang="en">Generalised Balanced Trenary</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Generalized_balanced_ternary"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dggrs/hexahedron -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dggrs/hexahedron">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dggrs/Polyhedron"/>
+        <rdfs:comment xml:lang="en">A solid with six equal faces which are squares</rdfs:comment>
+        <rdfs:label xml:lang="en">Hexahedron</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dggrs/icosahedron -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dggrs/icosahedron">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dggrs/Polyhedron"/>
+        <rdfs:comment xml:lang="en">A solid with twenty equal faces which are equilateral 
+                           triangles.</rdfs:comment>
+        <rdfs:label xml:lang="en">Icosahedron</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dggrs/tetrahedron -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dggrs/tetrahedron">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dggrs/Polyhedron"/>
+        <rdfs:comment xml:lang="en">A solid with four equal faces which are equilateral 
+                           triangles.</rdfs:comment>
+        <rdfs:label xml:lang="en">Tetrahedron</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dggrs/z7 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dggrs/z7">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dggrs/Index"/>
+        <rdfs:comment xml:lang="en">An index for hexagonal grid systems of aperture 7.</rdfs:comment>
+        <rdfs:label xml:lang="en">Z7</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://dx.doi.org/10.5194/agile-giss-6-32-2025"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dggrs/9r -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dggrs/9r">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dggrs/Index"/>
+        <rdfs:comment xml:lang="en">A highly compact index for hexagonal grid systems 
+                        developed by Ecere and first implemented by DGGAL.</rdfs:comment>
+        <rdfs:label xml:lang="en">9R</rdfs:label>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/ -->
+
+

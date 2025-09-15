@@ -1,0 +1,70 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ]
+}, {
+  "@id" : "http://w3id.org/dggrs/ImplDGGRS",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.semanticweb.org/dggrs/implementigeo7-z7-dggrid",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/dggrs/implementimplements" : [ {
+    "@id" : "http://w3id.org/dggrs/system/igeo7-z7"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://w3id.org/dggrs/ImplDGGRS"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The Igeo7 icosahedral grid with aperture 7 hexagons and the \n                    Z7 indexing scheme. As implemented by DGGRID."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Igeo7-Z7-DGGRID"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "https://dggrid.readthedocs.io/"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/dggrs/implementimplements",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.semanticweb.org/dggrs/implementivea7h-ecere-dggal",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/dggrs/implementimplements" : [ {
+    "@id" : "http://w3id.org/dggrs/system/ivea7h-ecere"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://w3id.org/dggrs/ImplDGGRS"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Modern icosahedral grid with aperture 7 hexagons and the \n                    Ecere indexing scheme. As implemented by DGGAL."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "IVEA7H-Ecere-DGGAL"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "https://dggal.org/"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/dggrs/implementivea7h-z7-gp",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/dggrs/implementimplements" : [ {
+    "@id" : "http://w3id.org/dggrs/system/ivea7-z7"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://w3id.org/dggrs/ImplDGGRS"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Modern icosahedral grid with aperture 7 hexagons and the \n                    Ecere indexing scheme. As implemented by GeoPlegma."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "IVEA7H-Z7-GP"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "https://github.com/GeoPlegma/"
+  } ]
+} ]

@@ -1,0 +1,92 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.w3.org/2002/07/owl#> .
+
+[ rdf:type owl:Ontology
+ ] .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://www.semanticweb.org/dggrs/aperture
+<http://www.semanticweb.org/dggrs/aperture> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.semanticweb.org/dggrs/basePolyhedron
+<http://www.semanticweb.org/dggrs/basePolyhedron> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.semanticweb.org/dggrs/usesIndex
+<http://www.semanticweb.org/dggrs/usesIndex> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.semanticweb.org/dggrs/zoneShape
+<http://www.semanticweb.org/dggrs/zoneShape> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/geosrs/conversion
+<https://w3id.org/geosrs/conversion> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/dggrs/DGGRS
+<http://www.semanticweb.org/dggrs/DGGRS> rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/dggrs/system/igeo7-z7
+<http://www.semanticweb.org/dggrs/system/igeo7-z7> rdf:type owl:NamedIndividual ,
+                                                            <http://www.semanticweb.org/dggrs/DGGRS> ;
+                                                   <http://www.semanticweb.org/dggrs/aperture> 7 ;
+                                                   <http://www.semanticweb.org/dggrs/basePolyhedron> <http://www.semanticweb.org/dggrs/icosahedron> ;
+                                                   <http://www.semanticweb.org/dggrs/usesIndex> <http://www.semanticweb.org/dggrs/Z7> ;
+                                                   <http://www.semanticweb.org/dggrs/zoneShape> "hexagonal with 12 pentagons"@en ;
+                                                   rdfs:comment """Icosahedral Snyder equal-area projection. Hexagonal zone 
+                    shape with reminiscent pentagons, refined with aperture 7. 
+                    Uses Z7 indexing mechanism."""@en ;
+                                                   rdfs:label "Igeo7-Z7"@en ;
+                                                   rdfs:seeAlso <http://dx.doi.org/10.5194/agile-giss-6-32-2025> ;
+                                                   <https://w3id.org/geosrs/conversion> <https://w3id.org/geosrs/SnyderEqualArea> .
+
+
+###  http://www.semanticweb.org/dggrs/system/ivea3h-9r
+<http://www.semanticweb.org/dggrs/system/ivea3h-9r> rdf:type owl:NamedIndividual ,
+                                                             <http://www.semanticweb.org/dggrs/DGGRS> ;
+                                                    <http://www.semanticweb.org/dggrs/aperture> 3 ;
+                                                    <http://www.semanticweb.org/dggrs/basePolyhedron> <http://www.semanticweb.org/dggrs/icosahedron> ;
+                                                    <http://www.semanticweb.org/dggrs/usesIndex> <http://www.semanticweb.org/dggrs/9r> ;
+                                                    <http://www.semanticweb.org/dggrs/zoneShape> "hexagonal with 12 pentagons"@en ;
+                                                    rdfs:comment """Icosahedral equal-area slice & dice projection with great 
+                    circle method. Hexagonal zone shape with reminiscent 
+                    pentagons, refined with perture 3. Applies the 9R 
+                    indexing mechanism divised by Ecere."""@en ;
+                                                    rdfs:label "IVEA3H-9R"@en ;
+                                                    <https://w3id.org/geosrs/conversion> <https://w3id.org/geosrs/SliceAndDiceVertexGreatCircle> .
+
+
+###  http://www.semanticweb.org/dggrs/system/ivea7h-z7
+<http://www.semanticweb.org/dggrs/system/ivea7h-z7> rdf:type owl:NamedIndividual ,
+                                                             <http://www.semanticweb.org/dggrs/DGGRS> ;
+                                                    <http://www.semanticweb.org/dggrs/aperture> 7 ;
+                                                    <http://www.semanticweb.org/dggrs/basePolyhedron> <http://www.semanticweb.org/dggrs/icosahedron> ;
+                                                    <http://www.semanticweb.org/dggrs/usesIndex> <http://www.semanticweb.org/dggrs/Z7> ;
+                                                    <http://www.semanticweb.org/dggrs/zoneShape> "hexagonal with 12 pentagons"@en ;
+                                                    rdfs:comment """Icosahedral equal-area slice & dice projection with great 
+                    circle method. Hexagonal zone shape with reminiscent 
+                    pentagons, refined with aperture 7. Plus Z7 indexing 
+                    mechanism."""@en ;
+                                                    rdfs:label "IVEA7H-Z7"@en ;
+                                                    <https://w3id.org/geosrs/conversion> <https://w3id.org/geosrs/SliceAndDiceVertexGreatCircle> .
+
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

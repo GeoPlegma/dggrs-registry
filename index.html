@@ -1,0 +1,58 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.min.js"></script>
+</head>
+<body>
+<header style="position:fixed;width:100%" id="topNav">
+  <nav>
+    <a href="https://geoplegma.github.io/dggrs-ontology/doc/dggrs-ontology/index-en.html">DGGRS Ontology</a>
+    <a href="https://geoplegma.github.io/dggrs-ontology/doc/implement/index-en.html">DGGRS Registry</a>
+    <a href="https://geoplegma.github.io/dggrs-ontology/doc/system/index-en.html">Implement Registry</a>
+</nav>
+<h3>DGGRS Registry and Ontology</h3>
+</header>
+<div class="content">
+  <br/><br/>
+    <h3 id="dggrs">Overview</h3>
+An ontology for Discrete Global Grid Reference Systems (DGGRS). A DGGRS couples a Discrete Global Grid System (DGGS) tesselating the Earth's surface, with a cell indexing scheme. Thus a DGGRS is able to uniquely and unequivocally identify any position on the globe, in theory at whatever resolution desired.
+<br>
+<br>
+This DGGRS ontology was developed as part of the <a href=https://github.com/GeoPlegma>GeoPlegma</a> project. It supports a web registry of DGGRS and the different software systems implementing them. Its main goal is to universally identify reference systems and software DGGS, providing a means of interoperability. These identifiers can be used in datasets, for instance to acurate inform on the underlying topology and reference system. 
+<br>
+<br>
+The assets in this repository are:
+  <ul> 
+      <li><b><a href="https://geoplegma.github.io/dggrs-ontology/doc/dggrs-ontology/index-en.html">DGGRS Ontology</b></a>: formalising the structure of the registry.</li>
+    <li><b><a href="https://geoplegma.github.io/dggrs-ontology/doc/system/index-en.html">DGGRS Registry</b></a>: providing unique identifiers and semantics for DGGRS definitions.</li>
+    <li><b><a href="https://geoplegma.github.io/dggrs-ontology/doc/implement/index-en.html">Implement Registry</b></a>: unique identifiers for software implementation of DGGRS.</li>
+  </ul>
+</div>
+  <h3>Related Work</h3>
+  <ul>
+    <li><a href="https://data.ign.fr/def/ignf/20190213.en.htm">CRS Ontology</a> (in development at the OGC)</li>
+    <li><a href="https://ogcapi.ogc.org/dggs/">OGC API for DGGS</a></li>
+    <li><a href="https://docs.ogc.org/as/20-040r3/20-040r3.html">OGC abstract specification on DGGS as reference systems</a></li>
+  </ul>
+<footer class="site-footer">
+
+  <div class="wrapper">
+
+      <h5 class="footer-heading"><a href=https://github.com/GeoPlegma>DGGRS registry at GitHub</a></h5>
+
+  </div>
+
+</footer>
+</body>
+<script>
+$( document ).ready(function() {
+var topHeight = $('#topNav').height();
+//var bottomHeight = $('#bottomNav').height();
+$('.content').css({ paddingTop : topHeight + 5 + 'px' });
+//$('body').css({ paddingBottom : bottomHeight + 5 + 'px' });
+});
+</script>
+</html>

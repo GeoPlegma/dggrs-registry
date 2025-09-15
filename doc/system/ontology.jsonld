@@ -1,0 +1,118 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ]
+}, {
+  "@id" : "http://www.semanticweb.org/dggrs/DGGRS",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.semanticweb.org/dggrs/aperture",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.semanticweb.org/dggrs/basePolyhedron",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.semanticweb.org/dggrs/system/igeo7-z7",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/dggrs/aperture" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "7"
+  } ],
+  "http://www.semanticweb.org/dggrs/basePolyhedron" : [ {
+    "@id" : "http://www.semanticweb.org/dggrs/icosahedron"
+  } ],
+  "http://www.semanticweb.org/dggrs/usesIndex" : [ {
+    "@id" : "http://www.semanticweb.org/dggrs/Z7"
+  } ],
+  "http://www.semanticweb.org/dggrs/zoneShape" : [ {
+    "@language" : "en",
+    "@value" : "hexagonal with 12 pentagons"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/dggrs/DGGRS"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Icosahedral Snyder equal-area projection. Hexagonal zone \n                    shape with reminiscent pentagons, refined with aperture 7. \n                    Uses Z7 indexing mechanism."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Igeo7-Z7"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "http://dx.doi.org/10.5194/agile-giss-6-32-2025"
+  } ],
+  "https://w3id.org/geosrs/conversion" : [ {
+    "@id" : "https://w3id.org/geosrs/SnyderEqualArea"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/dggrs/system/ivea3h-9r",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/dggrs/aperture" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "3"
+  } ],
+  "http://www.semanticweb.org/dggrs/basePolyhedron" : [ {
+    "@id" : "http://www.semanticweb.org/dggrs/icosahedron"
+  } ],
+  "http://www.semanticweb.org/dggrs/usesIndex" : [ {
+    "@id" : "http://www.semanticweb.org/dggrs/9r"
+  } ],
+  "http://www.semanticweb.org/dggrs/zoneShape" : [ {
+    "@language" : "en",
+    "@value" : "hexagonal with 12 pentagons"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/dggrs/DGGRS"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Icosahedral equal-area slice & dice projection with great \n                    circle method. Hexagonal zone shape with reminiscent \n                    pentagons, refined with perture 3. Applies the 9R \n                    indexing mechanism divised by Ecere."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "IVEA3H-9R"
+  } ],
+  "https://w3id.org/geosrs/conversion" : [ {
+    "@id" : "https://w3id.org/geosrs/SliceAndDiceVertexGreatCircle"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/dggrs/system/ivea7h-z7",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/dggrs/aperture" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "7"
+  } ],
+  "http://www.semanticweb.org/dggrs/basePolyhedron" : [ {
+    "@id" : "http://www.semanticweb.org/dggrs/icosahedron"
+  } ],
+  "http://www.semanticweb.org/dggrs/usesIndex" : [ {
+    "@id" : "http://www.semanticweb.org/dggrs/Z7"
+  } ],
+  "http://www.semanticweb.org/dggrs/zoneShape" : [ {
+    "@language" : "en",
+    "@value" : "hexagonal with 12 pentagons"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/dggrs/DGGRS"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Icosahedral equal-area slice & dice projection with great \n                    circle method. Hexagonal zone shape with reminiscent \n                    pentagons, refined with aperture 7. Plus Z7 indexing \n                    mechanism."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "IVEA7H-Z7"
+  } ],
+  "https://w3id.org/geosrs/conversion" : [ {
+    "@id" : "https://w3id.org/geosrs/SliceAndDiceVertexGreatCircle"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/dggrs/usesIndex",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.semanticweb.org/dggrs/zoneShape",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://w3id.org/geosrs/conversion",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+} ]

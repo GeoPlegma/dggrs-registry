@@ -1,0 +1,319 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "https://w3id.org", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema", "http://www.semanticweb.org/dggrs" ],
+    "iri" : "http://www.semanticweb.org/dggrs",
+    "author" : [ "_:genid2147483648" ],
+    "labels" : {
+      "en" : "Discrete Global Grid Reference Systems ontology"
+    },
+    "comments" : {
+      "en" : "A means to express and record Discrete Global Grid \n                        Reference Systems on the web. This ontology depends on \n                        the CRS ontology in development at the OGC."
+    },
+    "other" : {
+      "license" : [ {
+        "identifier" : "license",
+        "language" : "undefined",
+        "value" : "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+        "type" : "iri"
+      } ],
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "_:genid2147483648",
+        "type" : "label"
+      } ],
+      "rights" : [ {
+        "identifier" : "rights",
+        "language" : "en",
+        "value" : "This ontology is distributed under Attribution-NonCommercial-NoDerivs 4.0 International License",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "6",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "8",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "12",
+    "type" : "owl:Class"
+  }, {
+    "id" : "9",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "rdfs:Literal"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://www.semanticweb.org/dggrs/Polyhedron",
+    "baseIri" : "http://www.semanticweb.org/dggrs",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Polyhedron",
+      "en" : "Polyhedron"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/dggrs/dodecahedron",
+      "baseIri" : "http://www.semanticweb.org/dggrs",
+      "comment" : {
+        "en" : "A solid with twelve equal faces which are pentagons."
+      },
+      "labels" : {
+        "IRI-based" : "dodecahedron",
+        "en" : "Dodecahedron"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/dggrs/tetrahedron",
+      "baseIri" : "http://www.semanticweb.org/dggrs",
+      "comment" : {
+        "en" : "A solid with four equal faces which are equilateral \n                           triangles."
+      },
+      "labels" : {
+        "IRI-based" : "tetrahedron",
+        "en" : "Tetrahedron"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/dggrs/hexahedron",
+      "baseIri" : "http://www.semanticweb.org/dggrs",
+      "comment" : {
+        "en" : "A solid with six equal faces which are squares"
+      },
+      "labels" : {
+        "IRI-based" : "hexahedron",
+        "en" : "Hexahedron"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/dggrs/icosahedron",
+      "baseIri" : "http://www.semanticweb.org/dggrs",
+      "comment" : {
+        "en" : "A solid with twenty equal faces which are equilateral \n                           triangles."
+      },
+      "labels" : {
+        "IRI-based" : "icosahedron",
+        "en" : "Icosahedron"
+      }
+    } ],
+    "comment" : {
+      "en" : "A multi-faceted solid providing a geometric structure to \n                       divide a sphere or ellipsoid. The platonic solids are \n                       the most commonly used, although alternatives may also \n                       be used, such as the truncated icosahedron."
+    },
+    "attributes" : [ "external" ],
+    "id" : "6"
+  }, {
+    "iri" : "http://www.semanticweb.org/dggrs/DGGRS",
+    "baseIri" : "http://www.semanticweb.org/dggrs",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DGGRS",
+      "en" : "Discrete Global Grid Reference System (DGGRS)"
+    },
+    "comment" : {
+      "en" : "A Spatial Reference System composed of a Discrete Global \n                       Grid System and a zone (cell) indexing mechanism allowing \n                       for discrete but precise location on the surface of the \n                       Earth."
+    },
+    "attributes" : [ "external" ],
+    "id" : "1",
+    "superClasses" : [ "9" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/dggrs/Index",
+    "baseIri" : "http://www.semanticweb.org/dggrs",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Index",
+      "en" : "DGGRS indexing mechanism"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/dggrs/9r",
+      "baseIri" : "http://www.semanticweb.org/dggrs",
+      "comment" : {
+        "en" : "A highly compact index for hexagonal grid systems \n                        developed by Ecere and first implemented by DGGAL."
+      },
+      "labels" : {
+        "IRI-based" : "9r",
+        "en" : "9R"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/dggrs/z7",
+      "baseIri" : "http://www.semanticweb.org/dggrs",
+      "annotations" : {
+        "seeAlso" : [ {
+          "identifier" : "seeAlso",
+          "language" : "undefined",
+          "value" : "http://dx.doi.org/10.5194/agile-giss-6-32-2025",
+          "type" : "iri"
+        } ]
+      },
+      "comment" : {
+        "en" : "An index for hexagonal grid systems of aperture 7."
+      },
+      "labels" : {
+        "IRI-based" : "z7",
+        "en" : "Z7"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/dggrs/gbt",
+      "baseIri" : "http://www.semanticweb.org/dggrs",
+      "annotations" : {
+        "seeAlso" : [ {
+          "identifier" : "seeAlso",
+          "language" : "undefined",
+          "value" : "https://en.wikipedia.org/wiki/Generalized_balanced_ternary",
+          "type" : "iri"
+        } ]
+      },
+      "comment" : {
+        "en" : "Indexes hexagonal grid systems of aperture 7. At \n                           each refinement level cells rotate circa 20º so that \n                           vertices of a cell septet concide with the six \n                           vertices of a cell in the previous refinement level."
+      },
+      "labels" : {
+        "IRI-based" : "gbt",
+        "en" : "Generalised Balanced Trenary"
+      }
+    } ],
+    "comment" : {
+      "en" : "A mathematical function, ordering mechanism, or any other \n                       method providing a unique identifier to each zone (cell) \n                       of a DGGRS, at any refinement level (resolution)."
+    },
+    "attributes" : [ "external" ],
+    "id" : "4"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "8",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/dggrs/ImplDGGRS",
+    "baseIri" : "http://www.semanticweb.org/dggrs",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ImplDGGRS",
+      "en" : "DGGRS implementation"
+    },
+    "comment" : {
+      "en" : "A software system implementing a DGGRS. It should at a minimum provide an API to transform a geographic location into a zone (cell) identifier at a given refinement level (resolution), plus its inverse. "
+    },
+    "attributes" : [ "external" ],
+    "id" : "12"
+  }, {
+    "iri" : "https://w3id.org/geosrsSpatialReferenceSystem",
+    "baseIri" : "https://w3id.org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "geosrsSpatialReferenceSystem"
+    },
+    "subClasses" : [ "1" ],
+    "attributes" : [ "external" ],
+    "id" : "9"
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "2",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  } ],
+  "property" : [ {
+    "id" : "0",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "3",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "5",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "7",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "10",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "11",
+    "type" : "owl:objectProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "http://www.semanticweb.org/dggrs/aperture",
+    "baseIri" : "http://www.semanticweb.org/dggrs",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "aperture",
+      "en" : "DGGRS zone sub-division aperture"
+    },
+    "domain" : "1",
+    "comment" : {
+      "en" : "The number of zones in the subsequent DGGRS refinement \n                    level corresponding to a zone on the current level. Rate \n                    of zone sub-division. The higher the number, the ´faster' \n                    a DGGRS refines to small zones."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "0"
+  }, {
+    "iri" : "http://www.semanticweb.org/dggrs/usesIndex",
+    "baseIri" : "http://www.semanticweb.org/dggrs",
+    "range" : "4",
+    "label" : {
+      "IRI-based" : "usesIndex",
+      "en" : "Indexing mechanism used in a DGGRS"
+    },
+    "domain" : "1",
+    "comment" : {
+      "en" : "Indicates that a particular software software system \n                       implements a known DGGRS"
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "3"
+  }, {
+    "iri" : "http://www.semanticweb.org/dggrs/basePolyhedron",
+    "baseIri" : "http://www.semanticweb.org/dggrs",
+    "range" : "6",
+    "label" : {
+      "IRI-based" : "basePolyhedron",
+      "en" : "Base polyhedron of a DGGRS"
+    },
+    "domain" : "1",
+    "comment" : {
+      "en" : "Usually a polyhedron on which faces the datum \n                      surface is projected for further sub-division."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "5"
+  }, {
+    "iri" : "http://www.semanticweb.org/dggrs/zoneShape",
+    "baseIri" : "http://www.semanticweb.org/dggrs",
+    "range" : "8",
+    "label" : {
+      "IRI-based" : "zoneShape",
+      "en" : "Shape of zones (cells) in a DGGRS"
+    },
+    "domain" : "1",
+    "comment" : {
+      "en" : "Usually a regular shape like the hexagon or triangle. \n                         May also be a rhombic shape such as the parellelogram."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "7"
+  }, {
+    "range" : "9",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "10"
+  }, {
+    "iri" : "http://www.semanticweb.org/dggrs/implements",
+    "baseIri" : "http://www.semanticweb.org/dggrs",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "implements",
+      "en" : "Implementation of a DGGRS"
+    },
+    "domain" : "12",
+    "comment" : {
+      "en" : "Indicates that a particular software software system \n                       implements a known DGGRS"
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "11"
+  } ]
+}

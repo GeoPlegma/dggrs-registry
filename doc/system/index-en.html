@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+ <link rel="stylesheet" href="resources/primer.css" media="screen" />    <link rel="stylesheet" href="resources/rec.css" media="screen" />    <link rel="stylesheet" href="resources/extra.css" media="screen" />    <link rel="stylesheet" href="resources/owl.css" media="screen" />    <title>Discrete Global Grid Reference Systems Registry</title>
+
+
+<!-- SCHEMA.ORG METADATA -->
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","url":"http://w3id.org/dggrs/system/","image":"http://vowl.visualdataweb.org/webvowl/#iri=http://w3id.org/dggrs/system/","name":"Discrete Global Grid Reference Systems Registry", "headline":"This a registry for Discrete Global Grid Reference Systems (DGGRS). Each individual may identify a base polyhedron, a map projection, a base cell shape and an aperture. A DGGRS may be implemented differently in different software packages. Check also the DGGRS implement registry for a thorough list of DGGRS software packages. This registry was created to support the development of the GeoPlegma project, providing unique and universal identifiers for DGGRS and related software.", "dateReleased":"1st Sept, 2025", "dateModified":"15th Sept, 2025", "version":"v1.0.0", "license":"https://creativecommons.org/licenses/by-nc-nd/4.0/", "author":[{"@type":"Person","name":"Luís Moreira de Sousa","url":"http://orcid.org/0000-0002-5851-2071"}]}</script>
+
+<script src="resources/jquery.js"></script> 
+<script src="resources/marked.min.js"></script> 
+    <script> 
+function loadHash() {
+  jQuery(".markdown").each(function(el){jQuery(this).after(marked(jQuery(this).text())).remove()});
+	var hash = location.hash;
+	if($(hash).offset()!=null){
+	  $('html, body').animate({scrollTop: $(hash).offset().top}, 0);
+}
+	loadTOC();
+}
+function loadTOC(){
+	//process toc dynamically
+	  var t='<h2>Table of contents</h2><ul>';i = 1;j=0;
+	  jQuery(".list").each(function(){
+		if(jQuery(this).is('h2')){
+			if(j>0){
+				t+='</ul>';
+				j=0;
+			}
+			t+= '<li>'+i+'. <a href=#'+ jQuery(this).attr('id')+'>'+ jQuery(this).ignore("span").text()+'</a></li>';
+			i++;
+		}
+		if(jQuery(this).is('h3')){
+			if(j==0){
+				t+='<ul>';
+			}
+			j++;
+			t+= '<li>'+(i-1)+'.'+j+'. '+'<a href=#'+ jQuery(this).attr('id')+'>'+ jQuery(this).ignore("span").text()+'</a></li>';
+		}
+	  });
+	  t+='</ul>';
+	  $("#toc").html(t); 
+}
+$(function(){
+    loadHash();
+}); $.fn.ignore = function(sel){
+        return this.clone().find(sel||">*").remove().end();
+ }; 
+   </script> 
+  </head> 
+
+<body>
+<div class="container">
+<div class="head">
+<div style="float:right">language <a href="index-en.html"><b>en</b></a> </div>
+<h1>Discrete Global Grid Reference Systems Registry</h1>
+<h2>Release: 1st Sept, 2025</h2>
+
+
+<dl>
+<dt>Modified on: 15th Sept, 2025</dt>
+<dt>This version:</dt>
+<dd><a href="http://w3id.org/dggrs/system/v1.0.0">http://w3id.org/dggrs/system/v1.0.0</a></dd>
+<dt>Revision:</dt>
+<dd>v1.0.0</dd>
+<dt>Authors:</dt>
+<dd><a href="http://orcid.org/0000-0002-5851-2071">Luís Moreira de Sousa</a>, Insituto Superior Técnico, University of Lisbon</dd>
+
+<dt>Download serialization:</dt><dd><span><a href="ontology.jsonld" target="_blank"><img src="https://img.shields.io/badge/Format-JSON_LD-blue.svg" alt="JSON-LD" /></a> </span><span><a href="ontology.owl" target="_blank"><img src="https://img.shields.io/badge/Format-RDF/XML-blue.svg" alt="RDF/XML" /></a> </span><span><a href="ontology.nt" target="_blank"><img src="https://img.shields.io/badge/Format-N_Triples-blue.svg" alt="N-Triples" /></a> </span><span><a href="ontology.ttl" target="_blank"><img src="https://img.shields.io/badge/Format-TTL-blue.svg" alt="TTL" /></a> </span></dd><dt>License:</dt><dd><a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank"><img src="https://img.shields.io/badge/License-CC%20BY_NC_ND%204.0-blue.svg" alt="https://creativecommons.org/licenses/by-nc-nd/4.0/" /></a>
+<a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" rel="license" target="_blank">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Cc_by-nc-nd_icon.svg/120px-Cc_by-nc-nd_icon.svg.png" style="border-width:0" alt="License" />
+</a>
+<br/></dd><dt>Visualization:</dt><dd><a href="webvowl/index.html#" target="_blank"><img src="https://img.shields.io/badge/Visualize_with-WebVowl-blue.svg" alt="Visualize with WebVowl" /></a></dd>
+<!-- <dt>Evaluation:</dt><dd><a href="OOPSevaluation/oopsEval.html#" target="_blank"><img src="https://img.shields.io/badge/Evaluate_with-OOPS! (OntOlogy Pitfall Scanner!)-blue.svg" alt="Evaluate with OOPS!" /></a></dd> --></dl>
+
+<a href="provenance/provenance-en.html" target="_blank">Provenance of this page</a><hr/>
+</div>
+<div class="status">
+<div>
+<span>DGGRS Registry</span>
+</div>
+</div>     <div id="abstract"><h2>Abstract</h2><span class="markdown">
+This a registry for Discrete Global Grid Reference Systems (DGGRS). Each individual may identify a base polyhedron, a map projection, a base cell shape and an aperture. 
+
+A DGGRS may be implemented differently in different software packages. Check also the DGGRS implement registry for a thorough list of DGGRS software packages. 
+
+This registry was created to support the development of the GeoPlegma project, providing unique and universal identifiers for DGGRS and related software.
+
+</span>
+</div>
+<div id="toc"></div> 
+
+<!--INTRODUCTION SECTION-->
+    <div id="introduction"><h2 id="intro" class="list">Introduction <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<span class="markdown">Contains a list of individuals of type dggrs:DGGRS. As a Semantic Web document, it provides unique and universal identifiers to each DGGRS catalogued.</span>
+</div>
+  
+
+<!--OVERVIEW SECTION-->
+    <div id="overview"><h2 id="overv" class="list">DGGRS Registry: Overview <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<span class="markdown">
+This ontology has the following classes and properties.</span>
+<h4>Named Individuals</h4><ul xmlns:widoco="https://w3id.org/widoco/vocab#"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    class="hlist">
+   <li>
+      <a href="#http://www.semanticweb.org/dggrs/system/igeo7-z7" title="http://www.semanticweb.org/dggrs/system/igeo7-z7">Igeo7-Z7</a>
+   </li>
+   <li>
+      <a href="#http://www.semanticweb.org/dggrs/system/ivea3h-9r" title="http://www.semanticweb.org/dggrs/system/ivea3h-9r">IVEA3H-9R</a>
+   </li>
+   <li>
+      <a href="#http://www.semanticweb.org/dggrs/system/ivea7h-z7" title="http://www.semanticweb.org/dggrs/system/ivea7h-z7">IVEA7H-Z7</a>
+   </li>
+</ul><h4> Rules </h4><ul xmlns:widoco="https://w3id.org/widoco/vocab#"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    class="hlist"/><iframe align="center" width="100%" height ="500px" src="webvowl/index.html"></iframe> 
+</div>
+  
+
+<!--DESCRIPTION SECTION-->
+    <div id="description"><h2 id="desc" class="list">DGGRS Registry: Description <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+
+<span class="markdown">This is a placeholder text for the description of your ontology. The description should include an explanation and a diagram explaining how the classes are related, examples of usage, etc.
+
+</span></div>
+   
+
+<!--CROSSREF SECTION-->
+   <div id="crossref"><h2 id="crossreference" class="list">Cross-reference for DGGRS Registry classes, object properties and data properties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+This section provides details for each class and property defined by DGGRS Registry.
+<div xmlns:widoco="https://w3id.org/widoco/vocab#"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     id="namedindividuals">
+   <h3 id="namedindividuals" class="list">Named Individuals</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#http://www.semanticweb.org/dggrs/system/igeo7-z7" title="http://www.semanticweb.org/dggrs/system/igeo7-z7">Igeo7-Z7</a>
+      </li>
+      <li>
+         <a href="#http://www.semanticweb.org/dggrs/system/ivea3h-9r" title="http://www.semanticweb.org/dggrs/system/ivea3h-9r">IVEA3H-9R</a>
+      </li>
+      <li>
+         <a href="#http://www.semanticweb.org/dggrs/system/ivea7h-z7" title="http://www.semanticweb.org/dggrs/system/ivea7h-z7">IVEA7H-Z7</a>
+      </li>
+   </ul>
+   <div class="entity" id="http://www.semanticweb.org/dggrs/system/igeo7-z7">
+      <h3>Igeo7-Z7<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.semanticweb.org/dggrs/system/igeo7-z7</p>
+      <div class="comment">
+         <span class="markdown">Icosahedral Snyder equal-area projection. Hexagonal zone 
+                    shape with reminiscent pentagons, refined with aperture 7. 
+                    Uses Z7 indexing mechanism.</span>
+      </div>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="http://www.semanticweb.org/dggrs/DGGRS"
+               target="_blank"
+               title="http://www.semanticweb.org/dggrs/DGGRS">d g g r s</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://www.semanticweb.org/dggrs/system/ivea3h-9r">
+      <h3>IVEA3H-9R<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.semanticweb.org/dggrs/system/ivea3h-9r</p>
+      <div class="comment">
+         <span class="markdown">Icosahedral equal-area slice &amp; dice projection with great 
+                    circle method. Hexagonal zone shape with reminiscent 
+                    pentagons, refined with perture 3. Applies the 9R 
+                    indexing mechanism divised by Ecere.</span>
+      </div>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="http://www.semanticweb.org/dggrs/DGGRS"
+               target="_blank"
+               title="http://www.semanticweb.org/dggrs/DGGRS">d g g r s</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://www.semanticweb.org/dggrs/system/ivea7h-z7">
+      <h3>IVEA7H-Z7<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.semanticweb.org/dggrs/system/ivea7h-z7</p>
+      <div class="comment">
+         <span class="markdown">Icosahedral equal-area slice &amp; dice projection with great 
+                    circle method. Hexagonal zone shape with reminiscent 
+                    pentagons, refined with aperture 7. Plus Z7 indexing 
+                    mechanism.</span>
+      </div>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="http://www.semanticweb.org/dggrs/DGGRS"
+               target="_blank"
+               title="http://www.semanticweb.org/dggrs/DGGRS">d g g r s</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+</div><div xmlns:widoco="https://w3id.org/widoco/vocab#"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     id="rules">
+   <h3 class="list" id="rule">Rules</h3>
+   <ul class="hlist"/>
+</div><div id="legend">
+<h2>Legend <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<div   class="entity">
+<sup class="type-ni" title="Named Individuals">ni</sup>: Named Individuals
+</div>
+</div>
+</div>
+    
+
+<!--REFERENCES SECTION-->
+  <div id="references">
+<h2 id="ref" class="list">References <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<span class="markdown">
+Add your references here. It is recommended to have them as a list.</span>
+
+</div>
+<div id="acknowledgments">
+<h2 id="ack" class="list">Acknowledgments <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<p>
+The authors would like to thank <a href="http://www.essepuntato.it/">Silvio Peroni</a> for developing <a href="http://www.essepuntato.it/lode">LODE</a>, a Live OWL Documentation Environment, which is used for representing the Cross Referencing Section of this document and <a href="https://w3id.org/people/dgarijo">Daniel Garijo</a> for developing <a href="https://github.com/dgarijo/Widoco">Widoco</a>, the program used to create the template used in this documentation.</p>
+</div>
+
+
+</div>
+</body>
+</html>
