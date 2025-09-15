@@ -53,11 +53,11 @@
 #################################################################
 
 :basePolyhedron rdf:type owl:ObjectProperty ;
-              rdfs:label "Base polyhedron of a DGGRS"@en ;
-              rdfs:comment """Usually a polyhedron on which faces the datum 
-                            surface is projected for further sub-division."""@en ; 
-              rdfs:domain :DGGRS ;
-              rdfs:range :Polyhedron .
+        rdfs:label "Base polyhedron of a DGGRS"@en ;
+        rdfs:comment """Usually a polyhedron on which faces the datum 
+                      surface is projected for further sub-division."""@en ; 
+        rdfs:domain :DGGRS ;
+        rdfs:range :Polyhedron .
 
 :usesIndex rdf:type owl:ObjectProperty ;
         rdf:label "Indexing mechanism used in a DGGRS"@en ;
@@ -83,7 +83,7 @@
          rdfs:comment """Usually a regular shape like the hexagon or triangle. 
                          May also be a rhombic shape such as the parellelogram."""@en ; 
          rdfs:domain :DGGRS ;
-        rdfs:range xsd:string .
+         rdfs:range xsd:string .
 
 :aperture rdf:type owl:DatatypeProperty ;
     rdfs:label "DGGRS zone sub-division aperture"@en ;
@@ -104,38 +104,39 @@
 #################################################################
 
 :tetrahedron rdf:type :Polyhedron ;
-           rdfs:label "Tetrahedron"@en ;
-           rdfs:comment """A solid with four equal faces which are equilateral 
+        rdfs:label "Tetrahedron"@en ;
+        rdfs:comment """A solid with four equal faces which are equilateral 
                            triangles."""@en .
 
 :hexahedron rdf:type :Polyhedron ;
-           rdfs:label "Hexahedron"@en ;
-           rdfs:comment """A solid with six equal faces which are squares"""@en . 
+        rdfs:label "Hexahedron"@en ;
+        rdfs:comment """A solid with six equal faces which are squares"""@en . 
 
 :dodecahedron rdf:type :Polyhedron ;
-           rdfs:label "Dodecahedron"@en ;
-           rdfs:comment """A solid with twelve equal faces which are pentagons."""@en .
+        rdfs:label "Dodecahedron"@en ;
+        rdfs:comment """A solid with twelve equal faces which are pentagons."""@en .
 
 :icosahedron rdf:type :Polyhedron ;
-           rdfs:label "Icosahedron"@en ;
-           rdfs:comment """A solid with twenty equal faces which are equilateral 
+        rdfs:label "Icosahedron"@en ;
+        rdfs:comment """A solid with twenty equal faces which are equilateral 
                            triangles."""@en .
 
 :gbt rdf:type :Index ;
-           rdfs:label "Generalised Balanced Trenary"@en ;
-           rdfs:comment """Indexes hexagonal grid systems of aperture 7. At 
+        rdfs:label "Generalised Balanced Trenary"@en ;
+        rdfs:comment """Indexes hexagonal grid systems of aperture 7. At 
                            each refinement level cells rotate circa 20º so that 
                            vertices of a cell septet concide with the six 
-                           vertices of a cell in the previous refinement level."""@en .
+                           vertices of a cell in the previous refinement level."""@en ;
+        rdfs:seeAlso <https://en.wikipedia.org/wiki/Generalized_balanced_ternary> .
 
 :z7 rdf:type :Index ;
         rdfs:label "Z7"@en ;
         rdfs:comment """An index for hexagonal grid systems of aperture 7."""@en ; 
-        rdfs:seeAlso <http://dx.doi.org/10.5194/agile-giss-6-32-2025>.
+        rdfs:seeAlso <http://dx.doi.org/10.5194/agile-giss-6-32-2025> .
 
-:ecere rdf:type :Index ;
-        rdfs:label "Hexagonal index developed by Ecere."@en ;
+:9r rdf:type :Index ;
+        rdfs:label "9R"@en ;
         rdfs:comment """A highly compact index for hexagonal grid systems 
-                        first implemented by DGGAL."""@en .
+                        developed by Ecere and first implemented by DGGAL."""@en .
 
 
