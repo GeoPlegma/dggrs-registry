@@ -18,35 +18,11 @@
       "IRI-based" : "ImplDGGRS"
     },
     "individuals" : [ {
-      "iri" : "http://www.semanticweb.org/dggrs/implementivea7h-z7-gp",
-      "baseIri" : "http://www.semanticweb.org/dggrs",
+      "iri" : "https://w3id.org/dggrs/implement/igeo7-z7-dggrid",
+      "baseIri" : "https://w3id.org/dggrs/implement",
       "annotations" : {
-        "implementimplements" : [ {
-          "identifier" : "implementimplements",
-          "language" : "undefined",
-          "value" : "http://w3id.org/dggrs/system/ivea7-z7",
-          "type" : "iri"
-        } ],
-        "seeAlso" : [ {
-          "identifier" : "seeAlso",
-          "language" : "undefined",
-          "value" : "https://github.com/GeoPlegma/",
-          "type" : "iri"
-        } ]
-      },
-      "comment" : {
-        "en" : "Modern icosahedral grid with aperture 7 hexagons and the \n                    Ecere indexing scheme. As implemented by GeoPlegma."
-      },
-      "labels" : {
-        "IRI-based" : "implementivea7h-z7-gp",
-        "en" : "IVEA7H-Z7-GP"
-      }
-    }, {
-      "iri" : "http://www.semanticweb.org/dggrs/implementigeo7-z7-dggrid",
-      "baseIri" : "http://www.semanticweb.org/dggrs",
-      "annotations" : {
-        "implementimplements" : [ {
-          "identifier" : "implementimplements",
+        "implements" : [ {
+          "identifier" : "implements",
           "language" : "undefined",
           "value" : "http://w3id.org/dggrs/system/igeo7-z7",
           "type" : "iri"
@@ -62,17 +38,41 @@
         "en" : "The Igeo7 icosahedral grid with aperture 7 hexagons and the \n                    Z7 indexing scheme. As implemented by DGGRID."
       },
       "labels" : {
-        "IRI-based" : "implementigeo7-z7-dggrid",
+        "IRI-based" : "igeo7-z7-dggrid",
         "en" : "Igeo7-Z7-DGGRID"
       }
     }, {
-      "iri" : "http://www.semanticweb.org/dggrs/implementivea7h-ecere-dggal",
-      "baseIri" : "http://www.semanticweb.org/dggrs",
+      "iri" : "https://w3id.org/dggrs/implement/ivea7h-z7-gp",
+      "baseIri" : "https://w3id.org/dggrs/implement",
       "annotations" : {
-        "implementimplements" : [ {
-          "identifier" : "implementimplements",
+        "implements" : [ {
+          "identifier" : "implements",
           "language" : "undefined",
-          "value" : "http://w3id.org/dggrs/system/ivea7h-ecere",
+          "value" : "http://w3id.org/dggrs/system/ivea7-z7",
+          "type" : "iri"
+        } ],
+        "seeAlso" : [ {
+          "identifier" : "seeAlso",
+          "language" : "undefined",
+          "value" : "https://github.com/GeoPlegma/",
+          "type" : "iri"
+        } ]
+      },
+      "comment" : {
+        "en" : "Modern icosahedral grid with aperture 7 hexagons and the \n                    Z7 indexing scheme. As implemented by GeoPlegma."
+      },
+      "labels" : {
+        "IRI-based" : "ivea7h-z7-gp",
+        "en" : "IVEA7H-Z7-GP"
+      }
+    }, {
+      "iri" : "https://w3id.org/dggrs/implement/ivea3h-9r-dggal",
+      "baseIri" : "https://w3id.org/dggrs/implement",
+      "annotations" : {
+        "implements" : [ {
+          "identifier" : "implements",
+          "language" : "undefined",
+          "value" : "http://w3id.org/dggrs/system/ivea7h-9r",
           "type" : "iri"
         } ],
         "seeAlso" : [ {
@@ -83,10 +83,10 @@
         } ]
       },
       "comment" : {
-        "en" : "Modern icosahedral grid with aperture 7 hexagons and the \n                    Ecere indexing scheme. As implemented by DGGAL."
+        "en" : "Modern icosahedral grid with aperture 7 hexagons and the \n                    Ecere 9R indexing scheme. As implemented by DGGAL."
       },
       "labels" : {
-        "IRI-based" : "implementivea7h-ecere-dggal",
+        "IRI-based" : "ivea3h-9r-dggal",
         "en" : "IVEA7H-Ecere-DGGAL"
       }
     } ],

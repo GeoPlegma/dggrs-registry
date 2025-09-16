@@ -12,8 +12,8 @@
 #    Annotation properties
 #################################################################
 
-###  http://www.semanticweb.org/dggrs/implementimplements
-<http://www.semanticweb.org/dggrs/implementimplements> rdf:type owl:AnnotationProperty .
+###  https://w3id.org/dggrs/implement/implements
+<https://w3id.org/dggrs/implement/implements> rdf:type owl:AnnotationProperty .
 
 
 #################################################################
@@ -28,34 +28,34 @@
 #    Individuals
 #################################################################
 
-###  http://www.semanticweb.org/dggrs/implementigeo7-z7-dggrid
-<http://www.semanticweb.org/dggrs/implementigeo7-z7-dggrid> rdf:type owl:NamedIndividual ,
-                                                                     <http://w3id.org/dggrs/ImplDGGRS> ;
-                                                            <http://www.semanticweb.org/dggrs/implementimplements> <http://w3id.org/dggrs/system/igeo7-z7> ;
-                                                            rdfs:comment """The Igeo7 icosahedral grid with aperture 7 hexagons and the 
+###  https://w3id.org/dggrs/implement/igeo7-z7-dggrid
+<https://w3id.org/dggrs/implement/igeo7-z7-dggrid> rdf:type owl:NamedIndividual ,
+                                                            <http://w3id.org/dggrs/ImplDGGRS> ;
+                                                   rdfs:comment """The Igeo7 icosahedral grid with aperture 7 hexagons and the 
                     Z7 indexing scheme. As implemented by DGGRID."""@en ;
-                                                            rdfs:label "Igeo7-Z7-DGGRID"@en ;
-                                                            rdfs:seeAlso <https://dggrid.readthedocs.io/> .
+                                                   rdfs:label "Igeo7-Z7-DGGRID"@en ;
+                                                   rdfs:seeAlso <https://dggrid.readthedocs.io/> ;
+                                                   <https://w3id.org/dggrs/implement/implements> <http://w3id.org/dggrs/system/igeo7-z7> .
 
 
-###  http://www.semanticweb.org/dggrs/implementivea7h-ecere-dggal
-<http://www.semanticweb.org/dggrs/implementivea7h-ecere-dggal> rdf:type owl:NamedIndividual ,
-                                                                        <http://w3id.org/dggrs/ImplDGGRS> ;
-                                                               <http://www.semanticweb.org/dggrs/implementimplements> <http://w3id.org/dggrs/system/ivea7h-ecere> ;
-                                                               rdfs:comment """Modern icosahedral grid with aperture 7 hexagons and the 
-                    Ecere indexing scheme. As implemented by DGGAL."""@en ;
-                                                               rdfs:label "IVEA7H-Ecere-DGGAL"@en ;
-                                                               rdfs:seeAlso <https://dggal.org/> .
+###  https://w3id.org/dggrs/implement/ivea3h-9r-dggal
+<https://w3id.org/dggrs/implement/ivea3h-9r-dggal> rdf:type owl:NamedIndividual ,
+                                                            <http://w3id.org/dggrs/ImplDGGRS> ;
+                                                   rdfs:comment """Modern icosahedral grid with aperture 7 hexagons and the 
+                    Ecere 9R indexing scheme. As implemented by DGGAL."""@en ;
+                                                   rdfs:label "IVEA7H-Ecere-DGGAL"@en ;
+                                                   rdfs:seeAlso <https://dggal.org/> ;
+                                                   <https://w3id.org/dggrs/implement/implements> <http://w3id.org/dggrs/system/ivea7h-9r> .
 
 
-###  http://www.semanticweb.org/dggrs/implementivea7h-z7-gp
-<http://www.semanticweb.org/dggrs/implementivea7h-z7-gp> rdf:type owl:NamedIndividual ,
-                                                                  <http://w3id.org/dggrs/ImplDGGRS> ;
-                                                         <http://www.semanticweb.org/dggrs/implementimplements> <http://w3id.org/dggrs/system/ivea7-z7> ;
-                                                         rdfs:comment """Modern icosahedral grid with aperture 7 hexagons and the 
-                    Ecere indexing scheme. As implemented by GeoPlegma."""@en ;
-                                                         rdfs:label "IVEA7H-Z7-GP"@en ;
-                                                         rdfs:seeAlso <https://github.com/GeoPlegma/> .
+###  https://w3id.org/dggrs/implement/ivea7h-z7-gp
+<https://w3id.org/dggrs/implement/ivea7h-z7-gp> rdf:type owl:NamedIndividual ,
+                                                         <http://w3id.org/dggrs/ImplDGGRS> ;
+                                                rdfs:comment """Modern icosahedral grid with aperture 7 hexagons and the 
+                    Z7 indexing scheme. As implemented by GeoPlegma."""@en ;
+                                                rdfs:label "IVEA7H-Z7-GP"@en ;
+                                                rdfs:seeAlso <https://github.com/GeoPlegma/> ;
+                                                <https://w3id.org/dggrs/implement/implements> <http://w3id.org/dggrs/system/ivea7-z7> .
 
 
 ###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

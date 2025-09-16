@@ -65,10 +65,19 @@
     "@value" : "Discrete Global Grid Reference Systems ontology"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/dggrs/9r",
+  "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#comment",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#label",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://xmlns.com/foaf/0.1/name",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://w3id.org/dggrs/9r",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://www.semanticweb.org/dggrs/Index"
+    "@id" : "https://w3id.org/dggrs/Index"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -79,7 +88,7 @@
     "@value" : "9R"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/dggrs/DGGRS",
+  "@id" : "https://w3id.org/dggrs/DGGRS",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -93,7 +102,7 @@
     "@id" : "https://w3id.org/geosrsSpatialReferenceSystem"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/dggrs/ImplDGGRS",
+  "@id" : "https://w3id.org/dggrs/ImplDGGRS",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -104,7 +113,7 @@
     "@value" : "DGGRS implementation"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/dggrs/Index",
+  "@id" : "https://w3id.org/dggrs/Index",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -115,7 +124,7 @@
     "@value" : "DGGRS indexing mechanism"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/dggrs/Polyhedron",
+  "@id" : "https://w3id.org/dggrs/Polyhedron",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -126,14 +135,14 @@
     "@value" : "Polyhedron"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/dggrs/aperture",
+  "@id" : "https://w3id.org/dggrs/aperture",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "The number of zones in the subsequent DGGRS refinement \n                    level corresponding to a zone on the current level. Rate \n                    of zone sub-division. The higher the number, the ´faster' \n                    a DGGRS refines to small zones."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.semanticweb.org/dggrs/DGGRS"
+    "@id" : "https://w3id.org/dggrs/DGGRS"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -143,27 +152,27 @@
     "@id" : "_:genid3"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/dggrs/basePolyhedron",
+  "@id" : "https://w3id.org/dggrs/basePolyhedron",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Usually a polyhedron on which faces the datum \n                      surface is projected for further sub-division."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.semanticweb.org/dggrs/DGGRS"
+    "@id" : "https://w3id.org/dggrs/DGGRS"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Base polyhedron of a DGGRS"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.semanticweb.org/dggrs/Polyhedron"
+    "@id" : "https://w3id.org/dggrs/Polyhedron"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/dggrs/dodecahedron",
+  "@id" : "https://w3id.org/dggrs/dodecahedron",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://www.semanticweb.org/dggrs/Polyhedron"
+    "@id" : "https://w3id.org/dggrs/Polyhedron"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -174,10 +183,10 @@
     "@value" : "Dodecahedron"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/dggrs/gbt",
+  "@id" : "https://w3id.org/dggrs/gbt",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://www.semanticweb.org/dggrs/Index"
+    "@id" : "https://w3id.org/dggrs/Index"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -191,10 +200,10 @@
     "@id" : "https://en.wikipedia.org/wiki/Generalized_balanced_ternary"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/dggrs/hexahedron",
+  "@id" : "https://w3id.org/dggrs/hexahedron",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://www.semanticweb.org/dggrs/Polyhedron"
+    "@id" : "https://w3id.org/dggrs/Polyhedron"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -205,10 +214,10 @@
     "@value" : "Hexahedron"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/dggrs/icosahedron",
+  "@id" : "https://w3id.org/dggrs/icosahedron",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://www.semanticweb.org/dggrs/Polyhedron"
+    "@id" : "https://w3id.org/dggrs/Polyhedron"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -219,7 +228,7 @@
     "@value" : "Icosahedron"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/dggrs/implements",
+  "@id" : "https://w3id.org/dggrs/implements",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#comment" : [ {
     "@language" : "en",
@@ -230,16 +239,16 @@
     "@value" : "Implementation of a DGGRS"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.semanticweb.org/dggrs/ImplDGGRS"
+    "@id" : "https://w3id.org/dggrs/ImplDGGRS"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.semanticweb.org/dggrs/DGGRS"
+    "@id" : "https://w3id.org/dggrs/DGGRS"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/dggrs/tetrahedron",
+  "@id" : "https://w3id.org/dggrs/tetrahedron",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://www.semanticweb.org/dggrs/Polyhedron"
+    "@id" : "https://w3id.org/dggrs/Polyhedron"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -250,7 +259,7 @@
     "@value" : "Tetrahedron"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/dggrs/usesIndex",
+  "@id" : "https://w3id.org/dggrs/usesIndex",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#comment" : [ {
     "@language" : "en",
@@ -261,16 +270,16 @@
     "@value" : "Indexing mechanism used in a DGGRS"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.semanticweb.org/dggrs/DGGRS"
+    "@id" : "https://w3id.org/dggrs/DGGRS"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.semanticweb.org/dggrs/Index"
+    "@id" : "https://w3id.org/dggrs/Index"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/dggrs/z7",
+  "@id" : "https://w3id.org/dggrs/z7",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://www.semanticweb.org/dggrs/Index"
+    "@id" : "https://w3id.org/dggrs/Index"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -284,14 +293,14 @@
     "@id" : "http://dx.doi.org/10.5194/agile-giss-6-32-2025"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/dggrs/zoneShape",
+  "@id" : "https://w3id.org/dggrs/zoneShape",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Usually a regular shape like the hexagon or triangle. \n                         May also be a rhombic shape such as the parellelogram."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.semanticweb.org/dggrs/DGGRS"
+    "@id" : "https://w3id.org/dggrs/DGGRS"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -300,15 +309,6 @@
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
-}, {
-  "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#comment",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#label",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://xmlns.com/foaf/0.1/name",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "https://w3id.org/geosrsSpatialReferenceSystem",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]

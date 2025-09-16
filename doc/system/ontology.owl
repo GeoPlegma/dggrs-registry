@@ -6,7 +6,7 @@
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:dggrs="http://www.semanticweb.org/dggrs/"
+     xmlns:dggrs="https://w3id.org/dggrs/"
      xmlns:geosrs="https://w3id.org/geosrs/">
     <Ontology/>
     
@@ -24,31 +24,31 @@
     
 
 
-    <!-- http://www.semanticweb.org/dggrs/aperture -->
+    <!-- https://w3id.org/dggrs/aperture -->
 
 
-    <AnnotationProperty rdf:about="http://www.semanticweb.org/dggrs/aperture"/>
+    <AnnotationProperty rdf:about="https://w3id.org/dggrs/aperture"/>
     
 
 
-    <!-- http://www.semanticweb.org/dggrs/basePolyhedron -->
+    <!-- https://w3id.org/dggrs/basePolyhedron -->
 
 
-    <AnnotationProperty rdf:about="http://www.semanticweb.org/dggrs/basePolyhedron"/>
+    <AnnotationProperty rdf:about="https://w3id.org/dggrs/basePolyhedron"/>
     
 
 
-    <!-- http://www.semanticweb.org/dggrs/usesIndex -->
+    <!-- https://w3id.org/dggrs/usesIndex -->
 
 
-    <AnnotationProperty rdf:about="http://www.semanticweb.org/dggrs/usesIndex"/>
+    <AnnotationProperty rdf:about="https://w3id.org/dggrs/usesIndex"/>
     
 
 
-    <!-- http://www.semanticweb.org/dggrs/zoneShape -->
+    <!-- https://w3id.org/dggrs/zoneShape -->
 
 
-    <AnnotationProperty rdf:about="http://www.semanticweb.org/dggrs/zoneShape"/>
+    <AnnotationProperty rdf:about="https://w3id.org/dggrs/zoneShape"/>
     
 
 
@@ -71,10 +71,10 @@
     
 
 
-    <!-- http://www.semanticweb.org/dggrs/DGGRS -->
+    <!-- https://w3id.org/dggrs/DGGRS -->
 
 
-    <Class rdf:about="http://www.semanticweb.org/dggrs/DGGRS"/>
+    <Class rdf:about="https://w3id.org/dggrs/DGGRS"/>
     
 
 
@@ -90,58 +90,58 @@
     
 
 
-    <!-- http://www.semanticweb.org/dggrs/system/igeo7-z7 -->
+    <!-- https://w3id.org/dggrs/system/igeo7-z7 -->
 
 
-    <NamedIndividual rdf:about="http://www.semanticweb.org/dggrs/system/igeo7-z7">
-        <rdf:type rdf:resource="http://www.semanticweb.org/dggrs/DGGRS"/>
-        <dggrs:aperture rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</dggrs:aperture>
-        <dggrs:basePolyhedron rdf:resource="http://www.semanticweb.org/dggrs/icosahedron"/>
-        <dggrs:usesIndex rdf:resource="http://www.semanticweb.org/dggrs/Z7"/>
-        <dggrs:zoneShape xml:lang="en">hexagonal with 12 pentagons</dggrs:zoneShape>
+    <NamedIndividual rdf:about="https://w3id.org/dggrs/system/igeo7-z7">
+        <rdf:type rdf:resource="https://w3id.org/dggrs/DGGRS"/>
         <rdfs:comment xml:lang="en">Icosahedral Snyder equal-area projection. Hexagonal zone 
                     shape with reminiscent pentagons, refined with aperture 7. 
                     Uses Z7 indexing mechanism.</rdfs:comment>
         <rdfs:label xml:lang="en">Igeo7-Z7</rdfs:label>
         <rdfs:seeAlso rdf:resource="http://dx.doi.org/10.5194/agile-giss-6-32-2025"/>
+        <dggrs:aperture rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</dggrs:aperture>
+        <dggrs:basePolyhedron rdf:resource="https://w3id.org/dggrs/icosahedron"/>
+        <dggrs:usesIndex rdf:resource="https://w3id.org/dggrs/Z7"/>
+        <dggrs:zoneShape xml:lang="en">hexagonal with 12 pentagons</dggrs:zoneShape>
         <geosrs:conversion rdf:resource="https://w3id.org/geosrs/SnyderEqualArea"/>
     </NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/dggrs/system/ivea3h-9r -->
+    <!-- https://w3id.org/dggrs/system/ivea3h-9r -->
 
 
-    <NamedIndividual rdf:about="http://www.semanticweb.org/dggrs/system/ivea3h-9r">
-        <rdf:type rdf:resource="http://www.semanticweb.org/dggrs/DGGRS"/>
-        <dggrs:aperture rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</dggrs:aperture>
-        <dggrs:basePolyhedron rdf:resource="http://www.semanticweb.org/dggrs/icosahedron"/>
-        <dggrs:usesIndex rdf:resource="http://www.semanticweb.org/dggrs/9r"/>
-        <dggrs:zoneShape xml:lang="en">hexagonal with 12 pentagons</dggrs:zoneShape>
+    <NamedIndividual rdf:about="https://w3id.org/dggrs/system/ivea3h-9r">
+        <rdf:type rdf:resource="https://w3id.org/dggrs/DGGRS"/>
         <rdfs:comment xml:lang="en">Icosahedral equal-area slice &amp; dice projection with great 
                     circle method. Hexagonal zone shape with reminiscent 
                     pentagons, refined with perture 3. Applies the 9R 
                     indexing mechanism divised by Ecere.</rdfs:comment>
         <rdfs:label xml:lang="en">IVEA3H-9R</rdfs:label>
+        <dggrs:aperture rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</dggrs:aperture>
+        <dggrs:basePolyhedron rdf:resource="https://w3id.org/dggrs/icosahedron"/>
+        <dggrs:usesIndex rdf:resource="https://w3id.org/dggrs/9r"/>
+        <dggrs:zoneShape xml:lang="en">hexagonal with 12 pentagons</dggrs:zoneShape>
         <geosrs:conversion rdf:resource="https://w3id.org/geosrs/SliceAndDiceVertexGreatCircle"/>
     </NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/dggrs/system/ivea7h-z7 -->
+    <!-- https://w3id.org/dggrs/system/ivea7h-z7 -->
 
 
-    <NamedIndividual rdf:about="http://www.semanticweb.org/dggrs/system/ivea7h-z7">
-        <rdf:type rdf:resource="http://www.semanticweb.org/dggrs/DGGRS"/>
-        <dggrs:aperture rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</dggrs:aperture>
-        <dggrs:basePolyhedron rdf:resource="http://www.semanticweb.org/dggrs/icosahedron"/>
-        <dggrs:usesIndex rdf:resource="http://www.semanticweb.org/dggrs/Z7"/>
-        <dggrs:zoneShape xml:lang="en">hexagonal with 12 pentagons</dggrs:zoneShape>
+    <NamedIndividual rdf:about="https://w3id.org/dggrs/system/ivea7h-z7">
+        <rdf:type rdf:resource="https://w3id.org/dggrs/DGGRS"/>
         <rdfs:comment xml:lang="en">Icosahedral equal-area slice &amp; dice projection with great 
                     circle method. Hexagonal zone shape with reminiscent 
                     pentagons, refined with aperture 7. Plus Z7 indexing 
                     mechanism.</rdfs:comment>
         <rdfs:label xml:lang="en">IVEA7H-Z7</rdfs:label>
+        <dggrs:aperture rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</dggrs:aperture>
+        <dggrs:basePolyhedron rdf:resource="https://w3id.org/dggrs/icosahedron"/>
+        <dggrs:usesIndex rdf:resource="https://w3id.org/dggrs/Z7"/>
+        <dggrs:zoneShape xml:lang="en">hexagonal with 12 pentagons</dggrs:zoneShape>
         <geosrs:conversion rdf:resource="https://w3id.org/geosrs/SliceAndDiceVertexGreatCircle"/>
     </NamedIndividual>
 </rdf:RDF>

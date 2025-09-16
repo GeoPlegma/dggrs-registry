@@ -6,7 +6,7 @@
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:dggrs="http://www.semanticweb.org/dggrs/">
+     xmlns:implement="https://w3id.org/dggrs/implement/">
     <Ontology/>
     
 
@@ -23,10 +23,10 @@
     
 
 
-    <!-- http://www.semanticweb.org/dggrs/implementimplements -->
+    <!-- https://w3id.org/dggrs/implement/implements -->
 
 
-    <AnnotationProperty rdf:about="http://www.semanticweb.org/dggrs/implementimplements"/>
+    <AnnotationProperty rdf:about="https://w3id.org/dggrs/implement/implements"/>
     
 
 
@@ -61,44 +61,44 @@
     
 
 
-    <!-- http://www.semanticweb.org/dggrs/implementigeo7-z7-dggrid -->
+    <!-- https://w3id.org/dggrs/implement/igeo7-z7-dggrid -->
 
 
-    <NamedIndividual rdf:about="http://www.semanticweb.org/dggrs/implementigeo7-z7-dggrid">
+    <NamedIndividual rdf:about="https://w3id.org/dggrs/implement/igeo7-z7-dggrid">
         <rdf:type rdf:resource="http://w3id.org/dggrs/ImplDGGRS"/>
-        <dggrs:implementimplements rdf:resource="http://w3id.org/dggrs/system/igeo7-z7"/>
         <rdfs:comment xml:lang="en">The Igeo7 icosahedral grid with aperture 7 hexagons and the 
                     Z7 indexing scheme. As implemented by DGGRID.</rdfs:comment>
         <rdfs:label xml:lang="en">Igeo7-Z7-DGGRID</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://dggrid.readthedocs.io/"/>
+        <implement:implements rdf:resource="http://w3id.org/dggrs/system/igeo7-z7"/>
     </NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/dggrs/implementivea7h-ecere-dggal -->
+    <!-- https://w3id.org/dggrs/implement/ivea3h-9r-dggal -->
 
 
-    <NamedIndividual rdf:about="http://www.semanticweb.org/dggrs/implementivea7h-ecere-dggal">
+    <NamedIndividual rdf:about="https://w3id.org/dggrs/implement/ivea3h-9r-dggal">
         <rdf:type rdf:resource="http://w3id.org/dggrs/ImplDGGRS"/>
-        <dggrs:implementimplements rdf:resource="http://w3id.org/dggrs/system/ivea7h-ecere"/>
         <rdfs:comment xml:lang="en">Modern icosahedral grid with aperture 7 hexagons and the 
-                    Ecere indexing scheme. As implemented by DGGAL.</rdfs:comment>
+                    Ecere 9R indexing scheme. As implemented by DGGAL.</rdfs:comment>
         <rdfs:label xml:lang="en">IVEA7H-Ecere-DGGAL</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://dggal.org/"/>
+        <implement:implements rdf:resource="http://w3id.org/dggrs/system/ivea7h-9r"/>
     </NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/dggrs/implementivea7h-z7-gp -->
+    <!-- https://w3id.org/dggrs/implement/ivea7h-z7-gp -->
 
 
-    <NamedIndividual rdf:about="http://www.semanticweb.org/dggrs/implementivea7h-z7-gp">
+    <NamedIndividual rdf:about="https://w3id.org/dggrs/implement/ivea7h-z7-gp">
         <rdf:type rdf:resource="http://w3id.org/dggrs/ImplDGGRS"/>
-        <dggrs:implementimplements rdf:resource="http://w3id.org/dggrs/system/ivea7-z7"/>
         <rdfs:comment xml:lang="en">Modern icosahedral grid with aperture 7 hexagons and the 
-                    Ecere indexing scheme. As implemented by GeoPlegma.</rdfs:comment>
+                    Z7 indexing scheme. As implemented by GeoPlegma.</rdfs:comment>
         <rdfs:label xml:lang="en">IVEA7H-Z7-GP</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://github.com/GeoPlegma/"/>
+        <implement:implements rdf:resource="http://w3id.org/dggrs/system/ivea7-z7"/>
     </NamedIndividual>
 </rdf:RDF>
 
