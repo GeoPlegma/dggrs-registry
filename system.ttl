@@ -1,7 +1,7 @@
-@prefix : <http://www.semanticweb.org/dggrs/system/> .
+@prefix : <https://w3id.org/dggrs/system/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix geosrs: <https://w3id.org/geosrs/> .
-@prefix dggrs: <http://www.semanticweb.org/dggrs/> .
+@prefix dggrs: <https://w3id.org/dggrs/> .
 
 :igeo7-z7 a dggrs:DGGRS ;
     rdfs:label """Igeo7-Z7"""@en ;

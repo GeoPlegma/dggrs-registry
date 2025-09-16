@@ -1,4 +1,4 @@
-@prefix : <http://www.semanticweb.org/dggrs/implement> .
+@prefix : <https://w3id.org/dggrs/implement/> .
 @prefix dggrs: <http://w3id.org/dggrs/> .
 @prefix system: <http://w3id.org/dggrs/system/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -10,16 +10,16 @@
     :implements system:igeo7-z7 ;
     rdfs:seeAlso <https://dggrid.readthedocs.io/> .
 
-:ivea7h-ecere-dggal a dggrs:ImplDGGRS ;
+:ivea3h-9r-dggal a dggrs:ImplDGGRS ;
     rdfs:label "IVEA7H-Ecere-DGGAL"@en ;
     rdfs:comment """Modern icosahedral grid with aperture 7 hexagons and the 
-                    Ecere indexing scheme. As implemented by DGGAL."""@en ;
-    :implements system:ivea7h-ecere ;
+                    Ecere 9R indexing scheme. As implemented by DGGAL."""@en ;
+    :implements system:ivea7h-9r ;
     rdfs:seeAlso <https://dggal.org/> .
 
 :ivea7h-z7-gp a dggrs:ImplDGGRS ;
     rdfs:label "IVEA7H-Z7-GP"@en ;
     rdfs:comment """Modern icosahedral grid with aperture 7 hexagons and the 
-                    Ecere indexing scheme. As implemented by GeoPlegma."""@en ;
+                    Z7 indexing scheme. As implemented by GeoPlegma."""@en ;
     :implements system:ivea7-z7 ;
     rdfs:seeAlso <https://github.com/GeoPlegma/> .
